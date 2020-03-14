@@ -1,0 +1,49 @@
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Pasajeros Registrados</h3>
+            <div class="card-body">
+                <table class="table table-hover table-condensed table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Fecha</th>
+                            <th>Nacionalidad</th>
+                            <th>Pasaporte</th>
+                            <th>Dirección</th>
+                            <th>Email</th>
+                            <th>Teléfono</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                            <tr *ngFor="let pasajero of pasajeros" class="text-center">
+                                <td>{{pasajero.id}}</td>
+                                <td>{{pasajero.nombre}}</td>
+                                <td>{{pasajero.apellido}}</td>
+                                <td>{{pasajero.fechanacimiento}}</td>
+                                <td>{{pasajero.fechanacimiento}}</td>
+                                <td>{{pasajero.pasaporte}}</td>
+                                <td>{{pasajero.direccion}}</td>
+                                <td>{{pasajero.email}}</td>
+                                <td>{{pasajero.telefono}}</td> 
+                                <td>
+                                    <button class="btn btn-warning">Editar</button>
+                                    <button class="btn btn-danger">Eliminar</button>
+                                </td> 
+                            </tr>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    table td:nth-child(5) {
+        width: 100px;
+}
+</style>

@@ -1,0 +1,33 @@
+<div class="container col-md-6" >
+    <div class="card">
+        <div class="card-header">
+            <h3>Registrar Pasajeros</h3>
+            <div class="card-body">
+             <form action="">
+                 <div class="form-group">
+                     <label for="">Nombre:</label>
+                     <input type="text" class="form-control" [(ngModel)]="nombre" name="nombre">
+                     <label for="">Apellido:</label>
+                     <input type="text" class="form-control" [(ngModel)]="apellido" name="apellido">
+                     <label for="">Fecha de Nacimiento:</label>
+                     <input type="text" class="form-control" [(ngModel)]="fechanacimiento" name="fecha">
+                     <label for="">Nacionalidad:</label>
+                     <input type="text" class="form-control" [(ngModel)]="nacionalidad" name="nacionalidad">
+                     <label for="">Pasaporte:</label>
+                     <input type="text" class="form-control" [(ngModel)]="pasaporte" name="pasaporte">
+                     <label for="">Dirección:</label>
+                     <input type="text" class="form-control" [(ngModel)]="direccion" name="direccion">
+                     <label for="">Email:</label>
+                     <input type="text" class="form-control" [(ngModel)]="email" name="email">
+                     <label for="">Teléfono:</label>
+                     <input type="text" class="form-control" [(ngModel)]="telefono" name="telefono">
+
+                 </div>
+
+                 <button  (click)="Guardar()" class="btn btn-danger">Registrar</button>
+
+             </form>
+            </div>
+        </div>
+    </div>
+</div>
