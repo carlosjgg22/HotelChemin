@@ -44,7 +44,7 @@ public class ReservasRestController {
 	  @GetMapping(value = "pasajeros/listar")
 			public List<Pasajero> getPassenger() {
 			 
-			  //pasajeroRepositorio.findAll().forEach(elemento->listaPasajero.add(elemento));
+			  pasajeroRepositorio.findAll().forEach(elemento->listaPasajero.add(elemento));
 			/*
 			listaPasajero.forEach(y->{
 				System.out.println(y);
