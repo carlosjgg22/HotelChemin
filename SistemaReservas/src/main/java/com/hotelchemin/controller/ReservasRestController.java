@@ -45,12 +45,7 @@ public class ReservasRestController {
 			public List<Pasajero> getPassenger() {
 			 
 			  pasajeroRepositorio.findAll().forEach(elemento->listaPasajero.add(elemento));
-			/*
-			listaPasajero.forEach(y->{
-				System.out.println(y);
-			});
-			   */
-			//ResponseEntity<List<Pasajero>> response = new ResponseEntity<List<Pasajero>>(listaPasajero, HttpStatus.OK);
+		
 			  return listaPasajero;
 			  
 				
