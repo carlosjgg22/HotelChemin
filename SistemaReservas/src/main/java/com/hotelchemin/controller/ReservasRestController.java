@@ -25,6 +25,8 @@ public class ReservasRestController {
 	@Autowired 
 	IRepositorioPass pasajeroRepositorio; 
 	List<Pasajero> listaPasajero = new ArrayList<Pasajero>();
+
+	
 	
 	@PostMapping(value = "pasajeros/savepasajero")
 
@@ -42,9 +44,10 @@ public class ReservasRestController {
 	
 	
 	  @GetMapping(value = "pasajeros/listar")
-			public List<Pasajero> getPassenger() {
+	   public List<Pasajero> getPassenger() {
 			 
-			  pasajeroRepositorio.findAll().forEach(elemento->listaPasajero.add(elemento));
+	   listaPasajero= (List<Pasajero>) pasajeroRepositorio.findAll();
+		  	  
 		
 			  return listaPasajero;
 			  
